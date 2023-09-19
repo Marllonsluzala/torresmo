@@ -1,0 +1,274 @@
+:root{
+    --branco-principal:#FFFFFF;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "inter"; 
+/*colocamos variáveis com as cores que vamos usar no projeto*/
+/*assim fica mais fácil posteriormente*/
+/* BEM PARECIDO COM O ARDUÍNO OS CÓDIGOS AQUI, mas la colocamos #define para fazer algo assim*/
+}
+
+.cabeçalho {
+    background-color: #215e63;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-image: linear-gradient(#215e63,#FFFFFF);
+    }
+    
+.cabeçalho-item{
+    display:flex;
+    font-size: 30px;
+    }
+
+body{
+    background-color: var(--cor-de-fundo);
+    color:var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+.principal{
+    background-image: url(porco.avif);
+    background-repeat: no-repeat;
+    background-size:26%;
+    background-color: var(--branco-principal);
+    color: var(--cor-de-fundo);
+    background-position: right;
+    align-items: center;
+    text-align: center;
+}
+
+.container { 
+    height: 100vh; /*100vh significa usar uma dimensão de tela inteira, para aparecer toda a imagem em cada seção*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    /*dividi em duas partes a divisão container*/
+} 
+
+.container-botao{
+    background-color: var(--cor-de-fundo);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    /*utilizamos a cor de fundo azul, ajustamos a borda arredondada, a margem interna entre a escrita e a borda, 
+    a cor do texto branca e trouxe abaixo da imagem do Alura Plus. */
+    margin-bottom: 1em;
+    border: 2px solid var(--botao-azul)
+
+}
+
+.botao-secundario{
+    background-color: var(--cor-de-fundo);
+    border: 2px solid var(--botao-azul);
+}
+
+.container-aviso{
+    font-size: 15px;
+    color: var(--cor-de-fundo);
+}
+
+.container-titulo{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container-imagem { 
+    margin: 1em 0 2em 0; 
+    width: 50%;
+}
+
+.container-caixa { 
+    margin: 0 6em; 
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo-um{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-de-fundo);
+    margin-bottom: 0,1em;
+    font-weight: bold;
+}
+
+.descricao-texto-um{
+    color: var(--cor-de-fundo);
+    font-size: 24px;
+    margin-top: 1em;
+}
+
+.secao-um{
+    align-items: center;
+    background-image: linear-gradient(#FFFFFF,#309da5);
+}
+
+.imagem-secao-um{
+    margin-left: 10em;
+    width: 70%;
+    border: 2px solid var(--botao-azul);
+}
+
+
+.descricao-titulo-dois{
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--cor-de-fundo);
+    margin-bottom: 0,1em;
+    align-items: center;
+    margin-left: 2em;
+    font-weight: bold;
+}
+
+.descricao-texto-dois{
+    color: var(--cor-de-fundo);
+    margin-left: 5em;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.secao-dois{
+    align-items: center;
+    background-image: linear-gradient(#309da5,#0f474b);
+}
+
+.imagem-secao-dois{
+    margin-left: 10em;
+    width: 70%;
+    border: 2px solid var(--botao-azul);
+}
+
+.descricao-titulo-tres{
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--branco-principal);
+    margin-bottom: 0,1em;
+    align-items: center;
+    margin-left: 0em;
+    font-weight: bold;
+}
+
+.descricao-texto-tres{
+    color: var(--branco-principal);
+    margin-right: 2em;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.secao-tres{
+    align-items: center;
+    background-image: linear-gradient(#0f474b,#042022);
+}
+
+.imagem-secao-tres{
+    margin-left: 6em;
+    width: 65%;
+}
+
+.secundario-botao{
+    display: inline-block;
+    margin-top: 3em;
+    margin-left: 19em;
+}
+
+.container-descricao{
+    padding: 2em;
+}
+
+
+.almoco-lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 3em 5em;
+}
+
+.almoco{
+    text-align: center;
+    background-image: linear-gradient(#042022,#000000);
+}
+
+.almoco-titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.coxa-imagem{
+    width: 80%;
+}
+
+.choripan-imagem{
+    width: 40%;
+}
+
+.virado-imagem{
+
+}
+
+.lista-item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape-logo{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.rodape-logo-porks{
+    text-align: center;
+    margin-bottom: 1em;
+    border: 4px solid #abdeee;
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista-link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 3em;
+}
+.rodape-texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.lista-link a:hover { 
+    color: var(--botao-azul); 
+}
+.lista-link a:active { 
+    color: rgb(213, 250, 48); 
+}
+.container-botao:hover { 
+    background-color:rgb(5, 228, 72); 
+    color: var(--cor-de-fundo); 
+}
+
